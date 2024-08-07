@@ -42,3 +42,17 @@ td, th {
 td {
     background-color: #dddddd;
 }
+
+footer {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 10px;
+}
+
+.col.span-5-of-11 {
+    margin-bottom: 100px;
+}
+
+#zacatek2s {
+    border-bottom: 3px solid black;
+}
