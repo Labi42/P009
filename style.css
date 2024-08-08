@@ -11,6 +11,34 @@ header {
     margin-bottom: 100px;
 }
 
+nav {
+    background-color: #00000000;
+    border-bottom: 3px solid black;
+}
+
+nav ul {
+    background-color: #00000000;  
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 39px;
+}
+
+nav ul li a:hover {
+    color: #ffffff99;
+    border-bottom: 2px solid #fff;
+    font-size: 35px;
+    margin: 20px;
+    transition: all 0.5s;
+}
+
 h1 {
     margin: 0;
     position: absolute;
@@ -20,6 +48,11 @@ h1 {
     transform: translate(-50%, -50%);
     font-size: 100px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1:hover {
+    font-size: 200px;
+    transition: font-size 10s;
 }
 
 main{
@@ -43,16 +76,77 @@ td {
     background-color: #dddddd;
 }
 
-footer {
-    background-color: #dddddd;
-    text-align: center;
+.col.span-5-of-11 {
+    margin-bottom: 100px;
+    background-color: rgb(225, 225, 225);
+    padding: 15px;
+    width: 40%;
+}
+
+.col.span-5-of-11 p, ul, h4 {
+    background-color: rgb(200,200,200);
+    margin: 0 auto;
+    width: 70%;
     padding: 10px;
 }
 
-.col.span-5-of-11 {
-    margin-bottom: 100px;
+.col.span-5-of-11 li {
+    margin-left: 10px;
 }
 
 #zacatek2s {
     border-bottom: 3px solid black;
+}
+
+.col.span-5-of-11:nth-child(even),
+.col.span-5-of-11:nth-child(even) {
+    margin-right: 100px;
+}
+
+.podpora {
+    display: block;
+    width: 50%;
+    margin: 50px auto;
+    background-color: rgb(255, 255, 176);
+    text-align: center;
+    padding: 10px;
+}
+
+.podpora input {
+    display: block;
+    margin: 10px auto;
+    padding: 7px;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.podpora input[type="submit"] {
+    width: 40%;
+}
+
+.podpora input:hover[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 45%;
+    transition: all 0.5s;
+}
+
+.podpora input:active[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 3px;
+    width: 35%;
+    transition: all 1s;
+}
+
+.podpora textarea {
+    max-width: 90%;
+}
+
+footer {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 10px;
 }
